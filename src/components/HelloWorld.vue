@@ -1,7 +1,6 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+    <h1>HelloWorld{{ message }}</h1>
+    <button @click="emitxxx">分发事件</button>
 </template>
 
 <script lang="ts">
@@ -9,9 +8,17 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'HelloWorld',
-  props: {
-    msg: String,
-  },
+  props:['message'],
+  setup(props,content) {
+      console.log(props);
+      console.log(content);
+      function emitxxx(){
+          content.emit('xxx','hh')
+      }
+      return{
+          emitxxx
+      }
+  }
   
 });
 </script>
