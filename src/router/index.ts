@@ -8,6 +8,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/home',
     component: ()=>import('../views/home.vue')
+  },
+  {
+    path: '/watch',
+    component: ()=>import('../views/watchCom.vue')
   }
 ]
 
