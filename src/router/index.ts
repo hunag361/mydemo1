@@ -20,6 +20,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/hook',
     component: ()=>import('../views/hook.vue')
+  },
+  {
+    path: '/toRefs',
+    component: ()=>import('../views/toRefs.vue')
   }
 ]
 
