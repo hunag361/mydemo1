@@ -12,6 +12,14 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/watch',
     component: ()=>import('../views/watchCom.vue')
+  },
+  {
+    path: '/father',
+    component: ()=>import('../views/father.vue')
+  },
+  {
+    path: '/hook',
+    component: ()=>import('../views/hook.vue')
   }
 ]
 
