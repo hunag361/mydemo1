@@ -24,6 +24,14 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/toRefs',
     component: ()=>import('../views/toRefs.vue')
+  },
+  {
+    path: '/shall',
+    component: ()=>import('../views/shallowReactive与shallowRef.vue')
+  },
+  {
+    path: '/readonly',
+    component: ()=>import('../views/readonly与shallowReadonly.vue')
   }
 ]
 
