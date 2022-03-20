@@ -32,6 +32,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/readonly',
     component: ()=>import('../views/readonly与shallowReadonly.vue')
+  },
+  {
+    path: '/toRaw',
+    component: ()=>import('../views/toRaw和markRaw.vue')
   }
 ]
 

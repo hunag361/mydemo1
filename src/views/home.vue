@@ -24,7 +24,8 @@ export default defineComponent({
 		return {
             msg,
             showMessage,
-            xxx
+            xxx,
+            obj
         }
 	},
 })
