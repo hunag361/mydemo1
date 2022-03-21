@@ -36,6 +36,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/toRaw',
     component: ()=>import('../views/toRaw和markRaw.vue')
+  },
+  {
+    path: '/toRef',
+    component: ()=>import('../views/toRef的使用及特点.vue')
   }
 ]
 

@@ -36,7 +36,7 @@ export default defineComponent({
         // markRaw 标记的对象数据，从此以后不能被成为代理对象了
         state.likes = markRaw(likes)
         setInterval(()=>{
-            state.likes[0] +='==='
+            (state as any).likes[0] +='==='
             console.log('定时器走起来');
         },1000)
 
