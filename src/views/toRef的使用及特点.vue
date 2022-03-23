@@ -4,12 +4,15 @@
   <h3>money:{{money}}</h3>
   <hr>
   <button @click="update">更新数据</button>
+  <!-- 传递的是普通数据，而不是ref对象 -->
+  <Child :age="age" /> 
 </template>
 
 <script lang="ts">
 import { defineComponent ,reactive ,toRef,ref} from 'vue'
-
+import Child  from '../components/child1.vue'
 export default defineComponent({
+    components:{Child},
     setup() {
         const state = reactive({
             age:5,
